@@ -3,5 +3,10 @@
 import sys
 from .fraktur import encode
 
-for line in sys.stdin:
-    sys.stdout.write(encode(line))
+
+def main():
+    for line in sys.stdin:
+        sys.stdout.write(encode(line))
+
+if __name__ == "__main__":
+    main()
